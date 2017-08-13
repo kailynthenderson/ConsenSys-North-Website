@@ -1,0 +1,11 @@
+body, html {
+  background-color: #72bcd4;
+}
+.Image-Container {
+  animation: App-logo-spin infinite 60s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
