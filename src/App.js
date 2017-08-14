@@ -7,6 +7,7 @@ import TextField from 'material-ui/TextField';
 
 import ConsensysLogo from './images/consensysLogo.svg'
 import TorontoSilhouette from './images/torontoSilhouette.png'
+import LinkedInIcon from './images/linkedinIcon.svg'
 
 import './App.css';
 
@@ -38,6 +39,10 @@ const styles = {
    heigh: '70%',
    marginLeft: '-35%',
    marginTop: '-35%',
+//Corner ConsenSys Logo
+  //  marginLeft: '-35%',
+  //  marginTop: '-35%',
+
   //  width: '950px',
   //  height: '950px',
   //  marginLeft: '-475px',
@@ -72,6 +77,9 @@ const styles = {
  inputStyle: {
    color: "black",
    fontFamily: '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
+ },
+ iconStyle: {
+   verticalAlign: "middle"
  },
 }
 
@@ -145,7 +153,17 @@ class App extends Component {
             </a>
           </p>
         */}
-        <p style={styles.contactTextStyle}>Chami | Russell</p>
+        <p style={styles.contactTextStyle}>
+          Chami
+          <a href="https://www.linkedin.com/in/chami1" target="_blank">
+            <img style={styles.iconStyle} src={LinkedInIcon} alt="ConsenSys Logo" weight="20px" height="20px"/>
+          </a>
+          |
+          Russell
+          <a href="https://ca.linkedin.com/in/russellverbeeten" target="_blank">
+            <img style={styles.iconStyle} src={LinkedInIcon} alt="ConsenSys Logo" weight="20px" height="20px"/>
+          </a>
+        </p>
         <p style={styles.consensysTextStyle}>A ConsenSys Formation © 2017</p>
       </div>
     );
