@@ -1,8 +1,9 @@
 body, html {
   background-color: #72bcd4;
 }
-.Image-Container {
+.Image {
   animation: App-logo-spin infinite 60s linear;
+  /*height: 80px*/
 }
 
 @keyframes App-logo-spin {
